@@ -1,0 +1,37 @@
+{%extends "layout.html"%}
+{%block content%}
+
+<div class="price">
+  
+    <p> 
+    	 Hello user {{user_id}}
+        {{ recommendation.to_html() | safe }}
+     </p>
+
+    <fieldset>
+      <legend>Choose your price range</legend>
+      <form role = "form" method="POST">
+
+		<div>
+			<input type='checkbox' id='a' name='category[]' value='a'>
+			<label for='a'> less than $25 </label>
+		</div>
+		<div>
+			<input type='checkbox' id='b' name='category[]' value='b'>
+			<label for='b'> $25 - $70</label>
+		</div>
+		<div>
+			<input type='checkbox' id='c' name='category[]' value='c'>
+			<label for='c'>  $70 and more  </label>
+		</div>
+
+
+ 		<div>
+          <button type="submit">Submit option(s)</button>
+        </div>
+ 	</form>
+   </fieldset>
+ </div>
+
+
+{% endblock %}

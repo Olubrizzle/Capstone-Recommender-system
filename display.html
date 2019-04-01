@@ -1,0 +1,21 @@
+{%extends "layout.html"%}
+{%block content%}
+
+
+<div class="display">
+  
+    <p> Hello user {{ user_id }} 
+        {{ recommendation.to_html() | safe }}
+     </p>
+
+	<h3>
+		<a href="{{ url_for('occasion') }}">Find another item!</a>
+	</h3>
+</div>
+
+
+
+
+
+
+{% endblock %}

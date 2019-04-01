@@ -1,0 +1,141 @@
+{%extends "layout.html"%}
+{%block content%}
+
+<div class="category">
+  
+    <p> 
+        {{ recommendation.to_html() | safe }}
+     </p>
+
+    <fieldset>
+      <legend>Choose your category</legend>
+      <form role = "form" method="POST">
+
+		<div>
+			<input type='checkbox' id='T-shirts' name='category[]' value='T-shirts'>
+			<label for='T-shirts'>T Shirts</label>
+		</div>
+		<div>
+			<input type='checkbox' id='Tops' name='category[]' value='Tops'>
+			<label for='Tops'>Tops</label>
+		</div>
+		<div>
+			<input type='checkbox' id='Bags' name='category[]' value='Bags'>
+			<label for='Bags'>Bags</label>
+		</div>
+		<div>
+			<input type='checkbox' id='Blazers' name='category[]' value='Blazers'>
+			<label for='Blazers'>Blazers</label>
+		</div>
+		<div>
+			<input type='checkbox' id='Blouses' name='category[]' value='Blouses'>
+			<label for='Blouses'>Blouses</label>
+		</div>
+		<div>
+			<input type='checkbox' id='Boots & Booties' name='category[]' value='Boots & Booties'>
+			<label for='Boots & Booties'>Boots & Booties</label>
+		</div>
+		<div>
+			<input type='checkbox' id='Casual' name='category[]' value='Casual'>
+			<label for='Casual'>Casual</label>
+		</div>
+		<div>
+			<input type='checkbox' id='Clutches' name='category[]' value='Clutches'>
+			<label for='Clutches'>Clutches</label>
+		</div>
+		<div>
+			<input type='checkbox' id='Coats' name='category[]' value='Coats'>
+			<label for='Coats'>Coats</label>
+		</div>
+		<div>
+			<input type='checkbox' id='Cocktail' name='category[]' value='Cocktail'>
+			<label for='Cocktail'>Cocktail</label>
+		</div>
+		<div>
+			<input type='checkbox' id='Dresses' name='category[]' value='Dresses'>
+			<label for='Dresses'>Dresses</label>
+		</div>
+		<div>
+			<input type='checkbox' id='Flats' name='category[]' value='Flats'>
+			<label for='Flats'>Flats</label>
+		</div>
+		<div>
+			<input type='checkbox' id='Formal' name='category[]' value='Formal'>
+			<label for='Formal'>Formal</label>
+		</div>
+		<div>
+			<input type='checkbox' id='Heels' name='category[]' value='Heels'>
+			<label for='Heels'>Heels</label>
+		</div>
+		<div>
+			<input type='checkbox' id='Hoodies' name='category[]' value='Hoodies'>
+			<label for='Hoodies'>Hoodies</label>
+		</div>
+		<div>
+			<input type='checkbox' id='Jackets' name='category[]' value='Jackets'>
+			<label for='Jackets'>Jackets</label>
+		</div>
+		<div>
+			<input type='checkbox' id='Jeans' name='category[]' value='Jeans'>
+			<label for='Jeans'>Jeans</label>
+		</div>
+		<div>
+			<input type='checkbox' id='Jumpsuits' name='category[]' value='Jumpsuits'>
+			<label for='Jumpsuits'>Jumpsuits</label>
+		</div>
+		<div>
+			<input type='checkbox' id='Knits' name='category[]' value='Knits'>
+			<label for='Knits'>Knits</label>
+		</div>
+		<div>
+			<input type='checkbox' id='Leggings' name='category[]' value='Leggings'>
+			<label for='Leggings'>Leggings</label>
+		</div>
+		<div>
+			<input type='checkbox' id='Outerwear' name='category[]' value='Outerwear'>
+			<label for='Outerwear'>Outerwear</label>
+		</div>
+		<div>
+			<input type='checkbox' id='Pants' name='category[]' value='Pants'>
+			<label for='Pants'>Pants</label>
+		</div>
+		<div>
+			<input type='checkbox' id='Sandals' name='category[]' value='Sandals'>
+			<label for='Sandals'>Sandals</label>
+		</div>
+		<div>
+			<input type='checkbox' id='Shoes' name='category[]' value='Shoes'>
+			<label for='Shoes'>Shoes</label>
+		</div>
+		<div>
+			<input type='checkbox' id='Short' name='category[]' value='Short'>
+			<label for='Short'>Short</label>
+		</div>
+		<div>
+			<input type='checkbox' id='Skirts' name='category[]' value='Skirts'>
+			<label for='Skirts'>Skirts</label>
+		</div>
+		<div>
+			<input type='checkbox' id='Sneakers' name='category[]' value='Sneakers'>
+			<label for='Sneakers'>Sneakers</label>
+		</div>
+
+		<div>
+			<input type='checkbox' id='Totes' name='category[]' value='Totes'>
+			<label for='Totes'>Totes</label>
+		</div>
+		<div>
+			<input type='checkbox' id='Vests' name='category[]' value='Vests'>
+			<label for='Vests'>Vests</label>
+		</div>
+		<div>
+			<input type='checkbox' id='Work' name='category[]' value='Work'>
+			<label for='Work'>Work</label>
+		</div>
+	    <div>
+          <button type="submit">Submit option(s)</button>
+        </div>
+ 	</form>
+   </fieldset>
+  </div>
+{% endblock %}

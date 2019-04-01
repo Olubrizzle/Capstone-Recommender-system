@@ -1,0 +1,75 @@
+{%extends "layout.html"%}
+{%block content%}
+
+<div class="occasion">
+    <p> Hello user {{ user_id }} 
+        {{ recommendation.to_html() | safe }}
+     </p>
+
+
+    <!-- <form> -->
+      <fieldset>
+      <legend>Choose your occasion</legend>
+      <form role = "form" method="POST">
+        <div>
+          <input type="checkbox" id="Beach" name="occasion[]" value="Beach">
+          <label for="Beach">Beach</label>
+        </div>
+        <div>
+          <input type="checkbox" id="Work" name="occasion[]" value="Work">
+          <label for="Work">Work</label>
+        </div>
+        <div>
+          <input type="checkbox" id="School" name="occasion[]" value="School">
+          <label for="School">School</label>
+        </div>
+        <div>
+          <input type="checkbox" id="Errands" name="occasion[]" value="Errands">
+          <label for="Errands">Errands</label>
+        </div>
+        <div>
+          <input type="checkbox" id="Formal" name="occasion[]" value="Formal">
+          <label for="Formal">Formal Event</label>
+        </div>
+        <div>
+          <input type="checkbox" id="Concert" name="occasion[]" value="Concert">
+          <label for="Concert">Concert</label>
+        </div>
+        <div>
+          <input type="checkbox" id="Night Life" name="occasion[]" value="Night Life">
+          <label for="Night Life">Night Life</label>
+          <div>
+            <input type="checkbox" id="Cocktail" name="occasion[]" value="Cocktail">
+            <label for="Cocktail">Cocktail Parties</label>
+          </div>
+          <div>
+            <input type="checkbox" id="Interview" name="occasion[]" value="Interview">
+            <label for="Interview">Interview</label>
+          </div>
+          <div>
+            <input type="checkbox" id="Workout" name="occasion[]" value="Workout">
+            <label for="IWorkout">Workout</label>
+          </div>
+        <div>
+          <input type="checkbox" id="Dinner" name="occasion[]" value="Dinner">
+          <label for="Dinner">Dinner</label>
+          <!-- <input type="text" id="specifyValue" name="specify"> -->
+        </div>
+        <div>
+          <button type="submit">Submit option(s)</button>
+        </div>
+      </form>
+    </fieldset>
+      <!--
+      <body>
+          <h1>Transform a file demo</h1>
+
+         <form action="/transform" method="post" enctype="multipart/form-data">
+             <input type="file" name="data_file" />
+            <input type="submit" />
+         </form>
+     </body> -->
+    <!-- </form> -->
+  </div>
+        <!-- </div> -->
+{%endblock%}

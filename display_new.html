@@ -1,0 +1,17 @@
+{%extends "layout.html"%}
+{%block content%}
+
+
+{{recommendation.to_html() | safe}}
+
+
+<h3>
+<a href="{{ url_for('influencer') }}">Find another item!</a>
+</h3>
+
+
+
+
+
+
+{% endblock %}

@@ -1,0 +1,21 @@
+{%extends "layout.html"%}
+{%block content%}
+  <!-- <head>
+    <link href="../static/main.css" rel="stylesheet">
+  </head>
+    <body> -->
+     <div class="jumbotron text-center">
+        <h1> Welcome! </h1>
+        <!-- <a class="active" href="#home">Home</a> -->
+        
+            <h2>
+            	<p>
+            	<a href="{{ url_for('occasion') }}">Existing User</a>
+            </p>
+            <p>
+            	<a href="{{url_for('influencer') }}">New User</a>
+            </p>
+            </h2>
+      </div>
+
+{%endblock%}

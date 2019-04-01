@@ -1,0 +1,56 @@
+{%extends "layout.html"%}
+{%block content%}
+<div class="influencer">
+ 
+
+    <fieldset>
+      <legend>Choose your next influencer</legend>
+      <form role = "form" method="POST">
+
+		<div>
+			<input type='checkbox' id='weworewhat' name='category[]' value='weworewhat'>
+			<label for='weworewhat'>WeWoreWhat</label>
+		</div>
+		<div>
+			<input type='checkbox' id='chiaraferragni' name='category[]' value='chiaraferragni'>
+			<label for='chiaraferragni'>Chiara Ferragni</label>
+		</div>
+		<div>
+			<input type='checkbox' id='blaireadiebee' name='category[]' value='blaireadiebee'>
+			<label for='blaireadiebee'>Blair Eadiebee</label>
+		</div>
+		<div>
+			<input type='checkbox' id='somethingnavy' name='category[]' value='somethingnavy'>
+			<label for='somethingnavy'>Something Navy</label>
+		</div>
+		<div>
+			<input type='checkbox' id='hannahbronfman' name='category[]' value='hannahbronfman'>
+			<label for='hannahbronfman'>Hannah Bronfman</label>
+		</div>
+		<div>
+			<input type='checkbox' id='nicolettemason' name='category[]' value='nicolettemason'>
+			<label for='nicolettemason'>Nicolette Mason</label>
+		</div>
+		<div>
+			<input type='checkbox' id='manrepeller' name='category[]' value='manrepeller'>
+			<label for='manrepeller'>Man Repeller</label>
+		</div>
+		<div>
+			<input type='checkbox' id='jordynwoods' name='category[]' value='jordynwoods'>
+			<label for='jordynwoods'>Jordyn Woods</label>
+		</div>
+		<div>
+			<input type='checkbox' id='seaofshoes' name='category[]' value='seaofshoes'>
+			<label for='seaofshoes'>Sea of Shoes</label>
+		</div>
+		<div>
+			<input type='checkbox' id='ariellecharnas' name='category[]' value='ariellecharnas'>
+			<label for='ariellecharnas'>Arielle Charnas</label>
+		</div>
+		<div>
+          <button type="submit">Submit option(s)</button>
+        </div>
+ 	</form>
+   </fieldset>
+  </div>
+{%endblock%}
